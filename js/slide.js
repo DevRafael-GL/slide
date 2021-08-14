@@ -131,7 +131,6 @@ export class Slide {
   }
 
   onResize() {
-    console.log("teste");
     setTimeout(() => {
       this.slidesConfig();
       this.changeSlide(this.index.active);
@@ -163,7 +162,7 @@ export class Slide {
   }
 }
 
-export class SlideNav extends Slide {
+export default class SlideNav extends Slide {
   constructor(slide, wrapper) {
     super(slide, wrapper);
     this.bindControlEvents();
